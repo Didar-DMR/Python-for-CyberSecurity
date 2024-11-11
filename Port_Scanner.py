@@ -18,13 +18,13 @@ all_ports = input("Do you want to Scann all Ports? (Y/n): ")
 
 if all_ports == "Y" or all_ports == "y":
     begin_port = 0
-    finish_port = 65536
+    finish_port = 65535
 
 elif all_ports == "N" or all_ports == "n":
     print("Define Port Range...")
     begin_port = int(input("Start Port: "))
     finish_port = int(input("Finish Port: "))
-    if finish_port > 65536 :
+    if finish_port > 65535 :
         print("Invalid Finish Port!!")
         sys.exit()
 else:
